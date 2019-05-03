@@ -1,10 +1,8 @@
 import React, {Component} from "react";
-
 class TodoItems extends Component {
 
     constructor(props) {
         super(props);
-
         this.createTasks = this.createTasks.bind(this);
     }
 
@@ -21,9 +19,9 @@ class TodoItems extends Component {
         var listItems = todoEntries.map(this.createTasks);
 
         return (
-            <ul className="theList">
+            <listItem className="theList">
                 {listItems}
-            </ul>
+            </listItem>
         );
 
     }
